@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem Definition}{7}{0}{2}
+\beamer@sectionintoc {3}{Previous Works}{8}{0}{3}
+\beamer@sectionintoc {4}{What is a UIS?}{9}{0}{4}
+\beamer@sectionintoc {5}{Building block of a UIS}{11}{0}{5}
+\beamer@sectionintoc {6}{Architectural Model of an Interactor}{12}{0}{6}
+\beamer@sectionintoc {7}{How it works?}{22}{0}{7}
+\beamer@sectionintoc {8}{Formal Definition of an Interactor and UIS}{38}{0}{8}

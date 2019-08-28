@@ -5,11 +5,12 @@
 \usetheme{Boadilla}
 \usecolortheme{seahorse}
 
-\author[F.Paterno]{Fabio Paterno}
+\author[F.Paterno] {\textbf {Fabio Paterno} \\ \footnotesize Presented By \\ Ashiqur Rahman (1605103) \\ Zunaed Karim Sifat (1605113) \\ Tasin Ishmam (1605115)}
 \title[A Theory of User-interaction Objects
 ]{A Theory of User-interaction Objects}
 \institute[CNUCE]{Centro Nazionale Universitario di Calcolo Elettronico, Institute of CNR}
-\date{\today}
+\date{}
+
 
 \tikzstyle{oval} = [ellipse,draw,text centered]
 \tikzstyle{circ} = [circle,draw,text centered]
@@ -17,59 +18,64 @@
 \tikzstyle{dia} = [diamond,aspect=4,draw]
 \tikzstyle{para} = [trapezium, trapezium left angle=70, trapezium right angle=110,draw]
 
+
 \begin{document}
-\maketitle
-
-\begin{frame}{Table of Contents}
-    \tableofcontents
-\end{frame}
-
-\section{Problem Definition}
-\begin{frame}
-\frametitle{Problem Definition}	
-How to define user interface systems so that  
-\begin{itemize}
-	\item They can be described formally using precise mathematical notation 
-	\item Their behavior and properties can be methodically evaluated
-\end{itemize}
-\end{frame}
-
-\section{Motivation}
-\begin{frame}
-\frametitle{User Experience}
-User Interfaces are an important part of the user experience. \\
-They directly affect the users ability to analyze and understand the information presented. \newline \newline
-But  \newline
-\\They are way too complicated!
-\end{frame}
-
-\begin{frame}
-\frametitle{Motivation}
-Taking a mathematical approach to UI design helps us: \\
-\begin{itemize}
-	\item Provide useful indicators and guidelines to UI designers during design refinement phase\pause
-	\item Create better automated tools for UI design and testing \pause
-	\item Create more reusable UI elements
-\end{itemize}
-\end{frame}
-
-\section{Previous Works}
-\begin{frame}
-\frametitle{Previous Works}
-\addtobeamertemplate{block end}{}{\vspace*{1cm}}
-\begin{block}{B. A. Myers, ACM Transactions on Information Systems 8, 289-320}
-A new Model for handing input
-\end{block}
-
-\begin{block}{J. Foley et al. (1991) UIDE}
-An Intelligent User interface design environment
-\end{block}
-
-\begin{block}{L. Cinque et al. (1990)}
-Towards a formal specification methodology for iconic interface design
-\end{block}
-\end{frame}
-
+	\frame{\titlepage}
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	
+	
+	\section{Motivation}
+	\begin{frame}
+		\frametitle{User Experience}
+		User Interfaces are an important part of the user experience. \\
+		They directly affect the users ability to analyze and understand the information presented. \newline 
+		
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Motivation}
+		Taking a mathematical approach to UI design helps us: \\
+		\begin{itemize}
+			\item Provide useful indicators and guidelines to UI designers during design refinement phase\pause
+			\item Create better automated tools for UI design and testing \\ (Around 80\% software companies use such tools for testing their UI \footnote{The 2018 State of Testing Report - Smartbear})\pause
+			\item Create more reusable UI elements
+		\end{itemize}
+	\end{frame}
+	
+	\section{Problem Definition}
+	\begin{frame}
+		\frametitle{Problem Definition}	
+		How to define user interface systems so that  
+		\begin{itemize}
+			\item They can be described formally using precise mathematical notation 
+			\item Their behavior and properties can be methodically evaluated
+		\end{itemize}
+		
+	\end{frame}
+	
+	
+	
+	
+	
+	\section{Previous Works}
+	\begin{frame}
+		\frametitle{Previous Works}
+		\addtobeamertemplate{block end}{}{\vspace*{1cm}}
+		\begin{block}{B. A. Myers, ACM Transactions on Information Systems 8, 289-320}
+			A new Model for handing input
+		\end{block}
+		
+		\begin{block}{J. Foley et al. (1991) UIDE}
+			An Intelligent User interface design environment
+		\end{block}
+		
+		\begin{block}{L. Cinque et al. (1990)}
+			Towards a formal specification methodology for iconic interface design
+		\end{block}
+	\end{frame}
 
 
 %PART - 2 
@@ -313,6 +319,5 @@ So, We can define an UIS as,
 	    \end{itemize}
 	\end{frame}
 		
-
 
 \end{document}
