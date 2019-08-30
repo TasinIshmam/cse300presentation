@@ -234,91 +234,72 @@ Interactor performs two functions to the data.
 	
 \end{frame}
 
-\begin{frame}{Definition of an UIS}
-So, We can define an UIS as,
-\begin{block}{An UIS is a composition of of Interactors}
-	$$ UIS =  \{I1,I2,I3,I4,........\}  $$
-\end{block}
- 
-\end{frame}
+
 
 
 	\section{Properties of UIS}
-	\begin{frame}{Equivalence Property}
-		\begin{itemize}
-			\item We can also define UIS as a function of series of interactions, $i_i$\\
-			\item We call 2 UIS equivalent if for every possible input, they produce the same result
-		\end{itemize}
-	\end{frame}
+	
+	\begin{frame}{Definition of an UIS}
+	So, We can define an UIS as,
+		
+		\begin{block}{An UIS is a composition of of Interactors}
+			$$ UIS =  \{I1,I2,I3,I4,........\}  $$
+		\end{block}
 
-	\begin{frame}{Properties of UIS Using Ggraphs}   	
-	\begin{figure}[h]
-    	\centering
-    	\begin{tikzpicture}
-    	\node[rec,minimum width={width("Magnetometeraaaaaa")+2pt}](application) {Application};
-    	
-    	\node[rec,yshift=-0.5cm,minimum width={width("Magnetometeraaaaaa")+2pt},below of=application](composition) {Composition of Interators};
-    	\draw[<->] (composition) -- (application);
-    	
-    	
-    	\node[rec,xshift=-2.5cm,yshift=-0.5cm,minimum width={width("Magnetometer")+2pt},below of=composition](login) {Login system};
-    	\draw[<->] (login) -- (composition);
-    	
-    	\node[rec,xshift=-2cm,yshift=-0.5cm,minimum width={width("Magnetom")+2pt},below of=login](form) {Input Form};
-    	\draw[<->] (form) -- (login);
-    	
-    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=form](button) {Login button};
-    	\draw[<->] (button) -- (login);
-    	
-    	
-    	\node[rec,xshift=4cm,minimum width={width("Magnetometer")+2pt},right of=login](assignment) {Assignment};
-    	\draw[<->] (assignment) -- (composition);
-    	
-    	
-    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=button](upload) {Upload button};
-    	\draw[<->] (upload) -- (assignment);
-    	
-    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=upload](submit) {Submit};
-    	\draw[<->] (submit) -- (assignment);\pause
-    	
-    	\filldraw[green,<->] (submit) -- (assignment);\pause
-    	\filldraw[green,<->] (assignment) -- (composition);\pause
-		\filldraw[green,<->] (login) -- (composition);\pause
-    	\filldraw[green,<->] (button) -- (login);
-    	  	
-    	\end{tikzpicture}
-    \end{figure}
-   	\end{frame}
-   	
+		\begin{block}{Equivalence Property}
+		We call 2 UIS equivalent if for every possible input, they produce the same result
+		\end{block}
+	 
+	\end{frame}
    	
 	\begin{frame}{Properties of UIS Using Graphs}   	
 	\begin{figure}[h]
     	\centering
     	\begin{tikzpicture}
+    	
     	\node[rec,minimum width={width("Magnetometeraaaaaa")+2pt}](application) {Application};
-    	
     	\node[rec,yshift=-0.5cm,minimum width={width("Magnetometeraaaaaa")+2pt},below of=application](composition) {Composition of Interators};
-    	\draw[<->] (composition) -- (application);
-    	
-    	
     	\node[rec,xshift=-2.5cm,yshift=-0.5cm,minimum width={width("Magnetometer")+2pt},below of=composition](login) {Login system};
-    	\draw[<->] (login) -- (composition);
-    	
     	\node[rec,xshift=-2cm,yshift=-0.5cm,minimum width={width("Magnetom")+2pt},below of=login](form) {Input Form};
-    	\draw[<->] (form) -- (login);
-    	
     	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=form](button) {Login button};
-    	\draw[<->] (button) -- (login);
-    	
-    	
     	\node[rec,xshift=4cm,minimum width={width("Magnetometer")+2pt},right of=login](assignment) {Assignment};
-    	\draw[<->] (assignment) -- (composition);
-    	
-    	
     	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=button](upload) {Upload button};
-    	\draw[<->] (upload) -- (assignment);
-    	
     	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=upload](submit) {Submit};
+		\pause
+
+		\draw[<->] (composition) -- (application);
+    	\draw[<->] (login) -- (composition);
+    	\draw[<->] (form) -- (login);
+    	\draw[<->] (button) -- (login);
+    	\draw[<->] (assignment) -- (composition);
+    	\draw[<->] (upload) -- (assignment);
+    	\draw[<->] (submit) -- (assignment);
+    	\end{tikzpicture}
+    \end{figure}
+   	
+   	\end{frame}
+   	
+   	
+	\begin{frame}{Communication Consistency}   	
+	\begin{figure}[h]
+    	\centering
+    	\begin{tikzpicture}
+    	
+    	\node[rec,minimum width={width("Magnetometeraaaaaa")+2pt}](application) {Application};
+    	\node[rec,yshift=-0.5cm,minimum width={width("Magnetometeraaaaaa")+2pt},below of=application](composition) {Composition of Interators};
+    	\node[rec,xshift=-2.5cm,yshift=-0.5cm,minimum width={width("Magnetometer")+2pt},below of=composition](login) {Login system};
+    	\node[rec,xshift=-2cm,yshift=-0.5cm,minimum width={width("Magnetom")+2pt},below of=login](form) {Input Form};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=form](button) {Login button};
+    	\node[rec,xshift=4cm,minimum width={width("Magnetometer")+2pt},right of=login](assignment) {Assignment};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=button](upload) {Upload button};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=upload](submit) {Submit};
+
+		\draw[<->] (composition) -- (application);
+    	\draw[<->] (login) -- (composition);
+    	\draw[<->] (form) -- (login);
+    	\draw[<->] (button) -- (login);
+    	\draw[<->] (assignment) -- (composition);
+    	\draw[<->] (upload) -- (assignment);
     	\draw[<->] (submit) -- (assignment);
     	
     	\filldraw[green,<->] (submit) -- (assignment);
@@ -327,12 +308,43 @@ So, We can define an UIS as,
     	\filldraw[green,<->] (button) -- (login);
     	  	
     	\end{tikzpicture}
-    \end{figure}\pause
+    \end{figure}
     
-    \begin{itemize}
-    	\item Communication consistency\pause
-    	\item Connectivity property
-    \end{itemize}
+    \begin{block}{Communication Consistency}
+			The UIS should have at least one path.
+	\end{block}
+   	
+   	\end{frame}
+   	
+   	
+	\begin{frame}{Connectivity Property}   	
+	\begin{figure}[h]
+    	\centering
+    	\begin{tikzpicture}
+    	
+    	\node[rec,minimum width={width("Magnetometeraaaaaa")+2pt}](application) {Application};
+    	\node[rec,yshift=-0.5cm,minimum width={width("Magnetometeraaaaaa")+2pt},below of=application](composition) {Composition of Interators};
+    	\node[rec,xshift=-2.5cm,yshift=-0.5cm,minimum width={width("Magnetometer")+2pt},below of=composition](login) {Login system};
+    	\node[rec,xshift=-2cm,yshift=-0.5cm,minimum width={width("Magnetom")+2pt},below of=login](form) {Input Form};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=form](button) {Login button};
+    	\node[rec,xshift=4cm,minimum width={width("Magnetometer")+2pt},right of=login](assignment) {Assignment};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=button](upload) {Upload button};
+    	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=upload](submit) {Submit};
+
+		\draw[<->] (composition) -- (application);
+    	\draw[<->] (login) -- (composition);
+    	\draw[<->] (form) -- (login);
+    	\draw[<->] (button) -- (login);
+    	\draw[<->] (assignment) -- (composition);
+    	\draw[<->] (upload) -- (assignment);
+    	\draw[<->] (submit) -- (assignment);
+    	  	
+    	\end{tikzpicture}
+    \end{figure}
+  
+    \begin{block}{Connectivity Property}
+			Every component should be connected with one another.
+	\end{block}
    	
    	\end{frame}
 	
