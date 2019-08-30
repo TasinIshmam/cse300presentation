@@ -1,8 +1,9 @@
 \BOOKMARK [2][]{Outline0.1}{Motivation}{}% 1
 \BOOKMARK [2][]{Outline0.2}{Problem Definition}{}% 2
 \BOOKMARK [2][]{Outline0.3}{Previous Works}{}% 3
-\BOOKMARK [2][]{Outline0.4}{What is a UIS?}{}% 4
-\BOOKMARK [2][]{Outline0.5}{Building block of a UIS}{}% 5
-\BOOKMARK [2][]{Outline0.6}{Architectural Model of an Interactor}{}% 6
-\BOOKMARK [2][]{Outline0.7}{How it works?}{}% 7
-\BOOKMARK [2][]{Outline0.8}{Formal Definition of an Interactor and UIS}{}% 8
+\BOOKMARK [2][]{Outline0.4}{Building Block of a UIS}{}% 4
+\BOOKMARK [2][]{Outline0.5}{Architectural Model of an Interactor}{}% 5
+\BOOKMARK [2][]{Outline0.6}{How It Works?}{}% 6
+\BOOKMARK [2][]{Outline0.7}{Formal Definition of an Interactor and UIS}{}% 7
+\BOOKMARK [2][]{Outline0.8}{Properties of UIS}{}% 8
+\BOOKMARK [2][]{Outline0.9}{Benifit of Having a Precise Model}{}% 9

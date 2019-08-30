@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.11)  30 AUG 2019 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.11)  31 AUG 2019 01:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,7 +1183,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 11.
 
-(./final.aux)
+(./final.aux
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:b' multiply defined.
+
+)
 \openout1 = `final.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1367,7 +1374,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fiver-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<fiver-eps-converted-to.pdf, id=129, 1927.2pt x 966.61125pt>
+<fiver-eps-converted-to.pdf, id=135, 1927.2pt x 966.61125pt>
 File: fiver-eps-converted-to.pdf Graphic file (type pdf)
 <use fiver-eps-converted-to.pdf>
 Package pdftex.def Info: fiver-eps-converted-to.pdf  used on input line 48.
@@ -1386,7 +1393,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./craigslist-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<craigslist-eps-converted-to.pdf, id=130, 1927.2pt x 972.63374pt>
+<craigslist-eps-converted-to.pdf, id=136, 1927.2pt x 972.63374pt>
 File: craigslist-eps-converted-to.pdf Graphic file (type pdf)
 <use craigslist-eps-converted-to.pdf>
 Package pdftex.def Info: craigslist-eps-converted-to.pdf  used on input line 48
@@ -1395,6 +1402,38 @@ Package pdftex.def Info: craigslist-eps-converted-to.pdf  used on input line 48
 [3
 
  <./fiver-eps-converted-to.pdf> <./craigslist-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fiver.eps>
+(epstopdf)                    date: 2019-08-30 12:22:07
+(epstopdf)                    size: 11241825 bytes
+(epstopdf)             Output file: <fiver-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-08-30 12:31:35
+(epstopdf)                    size: 348083 bytes
+(epstopdf)             Command: <repstopdf --outfile=fiver-eps-converted-to.pdf
+ fiver.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
+File: fiver-eps-converted-to.pdf Graphic file (type pdf)
+<use fiver-eps-converted-to.pdf>
+Package pdftex.def Info: fiver-eps-converted-to.pdf  used on input line 48.
+(pdftex.def)             Requested size: 159.94286pt x 80.22133pt.
+Package epstopdf Info: Source file: <craigslist.eps>
+(epstopdf)                    date: 2019-08-30 12:19:07
+(epstopdf)                    size: 11311836 bytes
+(epstopdf)             Output file: <craigslist-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-08-30 12:31:42
+(epstopdf)                    size: 416496 bytes
+(epstopdf)             Command: <repstopdf --outfile=craigslist-eps-converted-t
+o.pdf craigslist.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
+File: craigslist-eps-converted-to.pdf Graphic file (type pdf)
+<use craigslist-eps-converted-to.pdf>
+Package pdftex.def Info: craigslist-eps-converted-to.pdf  used on input line 48
+.
+(pdftex.def)             Requested size: 159.94286pt x 80.72115pt.
+ [4
+
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1412,9 +1451,7 @@ line 58.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[4
-
-] [5
+[5
 
 ] [6
 
@@ -1444,10 +1481,10 @@ thkerncmss.
 
 ] [19
 
-]
-[20
+] [20
 
-] [21
+]
+[21
 
 ] [22
 
@@ -1455,28 +1492,67 @@ thkerncmss.
 
 ] [24
 
-] [25
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
-] [26
+[25
 
-] [27
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
-] [28
+[26
 
-] [29
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
-] [30
+[27
 
-] [31
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
 
-] [32
+[28
+
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
+
+[29
+
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
+
+[30
+
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
+
+[31
+
+]
+Overfull \hbox (4.1327pt too wide) in paragraph at lines 220--220
+ [] 
+ []
+
+[32
 
 ] [33
 
 ] [34
 
-]
-[35
+] [35
 
 ] [36
 
@@ -1492,25 +1568,6 @@ thkerncmss.
 
 ] [42
 
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-]
-[50
-
-] [51
-
 ]
 \tf@nav=\write6
 \openout6 = `final.nav'.
@@ -1521,36 +1578,40 @@ thkerncmss.
 \tf@snm=\write8
 \openout8 = `final.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: 481298864383A4157D70CADA18997D49;450.
+(rerunfilecheck)             Checksum: 269A8096360F2135145DF7C4A9B3D1E9;521.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 23716 strings out of 492982
- 479402 string characters out of 6134896
- 580375 words of memory out of 5000000
- 26649 multiletter control sequences out of 15000+600000
- 14948 words of font info for 54 fonts, out of 8000000 for 9000
+ 23701 strings out of 492982
+ 479176 string characters out of 6134896
+ 579260 words of memory out of 5000000
+ 26650 multiletter control sequences out of 15000+600000
+ 15254 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,67p,789b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,67p,789b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb>
-Output written on final.pdf (51 pages, 988596 bytes).
+Output written on final.pdf (42 pages, 965525 bytes).
 PDF statistics:
- 1496 PDF objects out of 1728 (max. 8388607)
- 1401 compressed objects within 15 object streams
- 113 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1258 PDF objects out of 1440 (max. 8388607)
+ 1175 compressed objects within 12 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
