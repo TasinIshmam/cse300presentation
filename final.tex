@@ -165,7 +165,7 @@
 \begin{frame}{How It Works}
 Interactor performs two functions to the data.
 \begin{itemize}
-	\item Input Function also called, Internal Behaviour
+	\item Input Function also called, Input Behaviour
 	\item Output Function also called, External Behaviour
 \end{itemize}
 \end{frame}
@@ -176,11 +176,11 @@ Interactor performs two functions to the data.
 	%\node[yshift=3cm](Application) {Application Side};
 	%\node[yshift=-2cm](User) {User Side};
 	\node[rec,fill=blue,xshift=-5.5cm,yshift=4cm](inputFunc){};
-	\node[right of=inputFunc,xshift=0.5cm](){Input Function};
+	\node[right of=inputFunc,xshift=0.5cm](){Input Behaviour};
 	\node[rec,blue,minimum width = 2cm,minimum height = 2.5cm,xshift = 2.25cm,yshift=0.5cm](){};
 	
 	\node[rec,fill=green,below of=inputFunc,yshift=0.5cm](outputFunc){};
-	\node[right of=outputFunc,xshift=0.55cm](){Output Function};
+	\node[right of=outputFunc,xshift=0.55cm](){Output Behaviour};
 	\node[rec,green,minimum width = 2cm,minimum height = 2.5cm,xshift = -2.25cm,yshift=0.5cm](){};
 	
 	\node[rec,minimum width = 6cm,minimum height = 2cm,yshift=0.5cm]() {};\pause
@@ -229,8 +229,8 @@ Interactor performs two functions to the data.
 	\end{block}
 	
 	Where,\\
-	 FI = Input Function 
-	 FO = Output Function
+	 FI = Input Behaviour \\
+	 FO = Output Behaviour
 	 
 	 
 	\pause
@@ -280,8 +280,7 @@ Interactor performs two functions to the data.
    	
    	\end{frame}
    	
-   	
-	\begin{frame}{Communication Consistency}   	
+   	\begin{frame}{Communication Consistency}   	
 	\begin{figure}[h]
     	\centering
     	\begin{tikzpicture}
@@ -302,11 +301,9 @@ Interactor performs two functions to the data.
     	\draw[<->] (assignment) -- (composition);
     	\draw[<->] (upload) -- (assignment);
     	\draw[<->] (submit) -- (assignment);
-    	
+
+    	\filldraw[green,<->] (upload) -- (assignment);
     	\filldraw[green,<->] (submit) -- (assignment);
-    	\filldraw[green,<->] (assignment) -- (composition);
-		\filldraw[green,<->] (login) -- (composition);
-    	\filldraw[green,<->] (button) -- (login);
     	  	
     	\end{tikzpicture}
     \end{figure}
@@ -332,13 +329,13 @@ Interactor performs two functions to the data.
     	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=button](upload) {Upload button};
     	\node[rec,xshift=2cm,minimum width={width("Magnetom")+2pt},right of=upload](submit) {Submit};
 
-		\draw[<->] (composition) -- (application);
-    	\draw[<->] (login) -- (composition);
-    	\draw[<->] (form) -- (login);
-    	\draw[<->] (button) -- (login);
-    	\draw[<->] (assignment) -- (composition);
-    	\draw[<->] (upload) -- (assignment);
-    	\draw[<->] (submit) -- (assignment);
+		\filldraw[green,<->] (composition) -- (application);
+    	\filldraw[green,<->] (login) -- (composition);
+    	\filldraw[green,<->] (form) -- (login);
+    	\filldraw[green,<->] (button) -- (login);
+    	\filldraw[green,<->] (assignment) -- (composition);
+    	\filldraw[green,<->] (upload) -- (assignment);
+    	\filldraw[green,<->] (submit) -- (assignment);
     	  	
     	\end{tikzpicture}
     \end{figure}
@@ -349,12 +346,12 @@ Interactor performs two functions to the data.
    	
    	\end{frame}
 	
-	\section{Benifit of Having a Precise Model}
-	\begin{frame}{Benifit of Having a Precise Model}
-		We can also use these properties to
+	\section{How This Model Helps Us to Achieve Our Goals}
+	\begin{frame}{How This Model Helps Us to Achieve Our Goals}
 	    \begin{itemize}
-	    	\item Build automated tools for building and fixing UI\pause
-	    	\item Develop a precise model to identify redundancy and common mistakes in UIS design\pause
+	    	\item Use graph algorithms to easily build automated tools for building and fixing UI elements\pause
+	    	\item Having a precise model to identify redundancy and common mistakes in UIS design\pause
+	    	\item Having an industry standard for designing UI elements
 	    	\item Develop reusable libraries for UI design
 	    \end{itemize}
 	\end{frame}
