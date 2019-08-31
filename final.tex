@@ -220,7 +220,7 @@ Interactor performs two functions to the data.
 \end{frame}
 
 
-\section{Formal Definition of an Interactor and UIS}
+\section{Formal Definition}
 \begin{frame}{Definition of an Interactor}
 	
 	Now, we can finally define an Interactor mathematically.
@@ -229,10 +229,15 @@ Interactor performs two functions to the data.
 	\end{block}
 	
 	Where,\\
-	
 	 FI = Input Function 
-	 FO = Output Function 
-	
+	 FO = Output Function
+	 
+	 
+	\pause
+	\begin{block}{An UIS is a composition of of Interactors}
+		$$ UIS =  \{I_1,I_2,I_3,I_4,........I_n\}  $$
+	\end{block}
+	An user can interact with these interactor in a specific order to generate desired result.
 	
 \end{frame}
 
@@ -241,13 +246,7 @@ Interactor performs two functions to the data.
 
 	\section{Properties of UIS}
 	
-	\begin{frame}{Definition of an UIS}
-	So, We can define an UIS as,
-		
-		\begin{block}{An UIS is a composition of of Interactors}
-			$$ UIS =  \{I1,I2,I3,I4,........\}  $$
-		\end{block}
-
+	\begin{frame}{Equivalence Property}
 		\begin{block}{Equivalence Property}
 		We call 2 UIS equivalent if for every possible input, they produce the same result
 		\end{block}
@@ -354,9 +353,9 @@ Interactor performs two functions to the data.
 	\begin{frame}{Benifit of Having a Precise Model}
 		We can also use these properties to
 	    \begin{itemize}
+	    	\item Build automated tools for building and fixing UI\pause
 	    	\item Develop a precise model to identify redundancy and common mistakes in UIS design\pause
-	    	\item Develop reusable libraries for UI design\pause
-	    	\item Build automated tools for building and fixing UI
+	    	\item Develop reusable libraries for UI design
 	    \end{itemize}
 	\end{frame}
 	
